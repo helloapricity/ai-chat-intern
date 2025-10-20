@@ -67,6 +67,8 @@ web_modules/
 
 # dotenv environment variable files
 .env
+.env.local
+.env.*.local
 .env.*
 !.env.example
 
@@ -137,3 +139,15 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Backend specific
+backend/node_modules/
+backend/uploads/
+backend/data/
+
+# Frontend specific
+frontend/node_modules/
+frontend/dist/
+
+# Mac
+.DS_Store
